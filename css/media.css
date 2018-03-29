@@ -1,0 +1,25 @@
+@media screen and (max-width:1200px ) {
+	.page1 nav{display:none;}
+	.page3,.page5,footer .inner{width:98%;}
+	.page3 .left{width:33%;}
+	.page3 .left .icon{width:17%;}
+	.page3 .left .text{width:70%;}
+	.page3 .pic{width:33%;}
+	.page5 .pic_list li{width:31%;margin:0 3% 3% 0;height:auto;}
+	
+}
+@media screen and (max-width:1024px ) {
+	.page2 .pic,.page2 .pic img{width:100%;}
+}
+@media screen and (max-width:768px ) {
+	
+}
+@media screen and (max-width:640px ) {
+	
+}
+@media screen and (max-width:480px ) {
+	
+}
+@media screen and (max-width:320px ) {
+	
+}

@@ -1,0 +1,119 @@
+*{margin:0;padding:0;}
+a{text-decoration:none;color:#000;}
+ul,li{list-style:none;}
+img,input{border:none;}
+.clearfix:after{
+	content: '.';
+	height:0;
+	font-size: 0;
+	display: block;
+	clear: both;
+}
+header,aside,article,section,footer,time{display:block;}
+html,body{height:100%;}
+/*[cloak]{display:block;}*/
+/*page1*/
+.page1{background:url(../images/oshin-slide-1.jpg) no-repeat center /cover;text-align: center;height:100%;}
+.page1 .logo{float:left;padding:2% 0 0 2%;}
+.page1 .icon{float:right;padding:2% 2% 0 0;}
+.page1 nav{display: inline-block;}
+.page1 nav li{float:left;padding:0 21px;font-size:14px;line-height:99px;height:99px;letter-spacing:1px;}
+.page1 .anim{width:364px;height:370px;
+	/*绝对局中*/
+	/*position:absolute;top:0;left:0;bottom:0;right:0;margin:auto;*/
+	/*css3样式*/
+	position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+	
+	/*省略*/
+	text-overflow:ellipsis;overflow: hidden;white-space: nowrap;
+}
+.page1 .anim .a1{line-height:80px;font-size:20px;animation:a1 1s ease forwards;position:absolute;top:0;width: 100% ;/*animation-fill-mode:;*/}
+.page1 .anim .a2{line-height:102px;font-size:50px;width:350px;display:inline-block;border:7px solid #000;position:absolute;top:80px;left:0;animation:a2 1s ease forwards;}
+.page1 .anim .a3{font-family:'tt';;line-height:111px;font-size:30px;position:absolute;top:182px;left:0;width: 100% ;animation:a3 1s ease forwards;}
+@keyframes a1{
+	0%{left:-300px;opacity:0;}
+	100%{left:0px;opacity:1}
+}
+@keyframes a2{
+	0%{top:-200px;opacity:0;}
+	100%{top:80px;opacity:1;}
+}
+@keyframes a3{
+	0%{left:300px;opacity:0;}
+	100%{left:0px;opacity:1;}
+}
+@font-face {
+	font-family: 'tt';
+	src: url('../fonts/BrushScriptStd.eot');
+	src: local('☺'), url('../fonts/BrushScriptStd.woff') format('woff'), url('../fonts/BrushScriptStd.ttf') format('truetype'), url('../fonts/BrushScriptStd.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+.fadelut{text-align: center;}
+.fadelut h3{padding-top:75px;line-height:73px;height:73px;}
+.fadelut span{line-height:64px;height:64px;display:inline-block;padding-bottom:25px;color:#606364;}
+.fadelut .ling{height:10px;width:10px;margin:0 auto;background:#e0a240;border:1px solid #f6e4c8;transform:rotateZ(45deg);}
+.fadelut .ling:before{content:'' ;width:20px;height: 1px;background:#e8e8e8;position:absolute;top:0;left:0;transform:rotateZ(-45deg) translate(-34px,0px);}
+.fadelut .ling:after{content:'' ;width:20px;height: 1px;background:#e8e8e8;position:absolute;top:0;left:0;transform:rotateZ(-45deg) translate(28px,0px);}
+.page2 p{line-height:33px;padding:45px 0 80px;}
+.page2 .pic{font-size:0;}
+.page2 .pic img{}
+.page2 li{height:245px;width:25%;background:#edf0f2;float:left;}
+.page2 li:nth-child(even){background:#f2f5f8;}
+.page2 li span{display:block;line-height:53px;height:53px;}
+.page2 li i{padding-top:60px;font-size:60px;animation:fin 0.5s forwards;}
+.page2 li:hover i{animation:late 0.5s forwards;}
+@keyframes late{
+	0%{padding-top:60px}
+	100%{padding-top:5px}
+}
+@keyframes fin{
+	0%{padding-top:5px}
+	100%{padding-top:60px}
+}
+.page3{width:1200px;margin:0 auto;padding-bottom:90px;}
+.page3 .left{float:left;width:398px;padding-top:110px;}
+.page3 .left .icon{float:left;width:71px;line-height:53px;color:#e8ad4e;font-size:20px;text-align: center;}
+.page3 .left .text{float:left;width:280px;}
+.page3 .left li{padding-bottom:40px;}
+.page3 .left h3{line-height:53px;}
+.page3 .left p{line-height:26px;color:#6e7374;}
+.page3 .pic{float:left;width:404px;padding-top:90px;}
+.page3 .pic img{width:90%;text-align: center;}
+.page4{height:400px;background:url(../images/wanderlust01.jpg) no-repeat center top / cover fixed;}
+
+.page5{width:1200px;margin:0 auto;}
+.page5 .nav{display:inline-block;padding-top:85px;}
+.page5 .nav li{float:left;}
+.page5 .nav li a{display:block;padding:0 22px;line-height: 42px;border:1px solid #fff}
+.page5 .nav li a:hover{border:1px solid #e0a240;color:#e0a240;}
+.page5 .pic_list li{width:373px;height:221px;margin:0 40px 40px 0;float:left;}
+.page5 .pic_list li:nth-child(3n){margin-right:0;}
+.page5 .pic_list img{width:100%;height:100%;display:block;}
+.page5 i{border:1px solid #000;width:158px;height:44px;line-height:44px;display:inline-block;font-style: normal;margin-bottom:90px;}
+
+.page6{min-height:413px;background:#f2f3f8;text-align: center;}
+.page6 i{font-size:90px;padding-top:71px;height:134px;color:#dfdfdf;}
+.page6 p{font-size:20px;line-height:36px;width:690px;margin:0 auto;}
+.page6 em,.page6 a{color:#e0a27d;}
+.page6 a{line-height:39px;}
+.page6 span{line-height:53px;display:inline-block;}
+
+.page7 ul{padding-top:85px;}
+.page7 li{float:left;width:48%;padding:0 1%;}
+.page7 li img{width:100%;height:100%;}
+
+.page8{height:340px;background:url(../images/page8_bg_04.jpg);margin-top:90px;color:#fff;text-align: center;}
+.page8 h3{line-height:53px;padding-top:85px;}
+.page8 p{line-height:47px;margin-bottom:20px;}
+.page8 a{display:inline-block;color:#fff;height:44px;width:110px;line-height:44px;background:#f0b452;}
+
+footer{background:#f2f3f8 ;}
+footer .inner{width:1200px;margin:0 auto;}
+footer .inner li{width:25%;float:left;}
+
+
+.footer{line-height:70px;height:70px;text-align: center;color:#939595;}
+
